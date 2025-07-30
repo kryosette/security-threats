@@ -28,7 +28,7 @@
 ## 2. Network protocol vulnerabilities
 
 ### Basic:
-- **CVE-2012-4929: CRIME** - attack on TLS compression  ***just disable data compression** (in tls 1.2 and earlier). (TLS 1.3 completely removed compression at the TLS layer (RFC 8446, Section 4.1.2), making CRIME irrelevant for pure TLS 1.3 connections.) 💪 (i use only TLS 1.3 in my project) 
+- **CVE-2012-4929: CRIME** - attack on TLS compression  ***just disable data compression** (in tls 1.2 and earlier). (TLS 1.3 completely removed compression at the TLS layer (RFC 8446, Section 4.1.2), making CRIME irrelevant for pure TLS 1.3 connections.) 💪 (I only use TLS 1.3 in my project.) 
 - **CVE-2014-0160: Heartbleed** - memory leak in OpenSSL
 - **CVE-2014-3566: PUDDLE** - attack on SSL 3.0
 - **CVE-2017-0144: EternalBlue** - SMBv1 vulnerability
