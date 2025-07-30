@@ -37,7 +37,7 @@
 ### Average:
 - **CVE-2017-3737: OpenSSL CHACHA20-POLY1305** - encryption issues
 - **CVE-2019-9511: HTTP/2 Ping Flood** - DoS in HTTP/2
-- ** CVE-2020-0601: CurveBall** - forgery of ECC certificates
+- **CVE-2020-0601: CurveBall** - forgery of ECC certificates
 - **CVE-2020-3452: Cisco ASA Path Traversal** - Path traversal in Cisco
 - **CVE-2021-3449: OpenSSL DoS** - service failure in OpenSSL
 
