@@ -192,16 +192,7 @@
 3. **MITRE ATT&CK** - https://attack.mitre.org
 4. **Zero Day Initiative** - https://www.zerodayinitiative.com
 5. **Project Zero** - https://googleprojectzero.blogspot.com
-
-### **a list of hidden and non-obvious threats to an anonymous social network**  
-
-You're right — classic vulnerabilities like SQLi or XSS are just the tip of the iceberg. Attacks on infrastructure, logic, anonymity, and scalability are critical for **the largest anonymous social network**.  
-
-Here is a complete list of threats that are not mentioned in standard guides (but they will destroy you if you ignore them).  
-
 ---
-
-## **0. Threats that almost no one thinks about (but they are deadly)**  
 
 ### **1. Attacks on anonymity**  
 1. **Metadata Correlation Attacks** – collecting time, IP, and behavior data for deanonymization.  
