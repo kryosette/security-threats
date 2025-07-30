@@ -1,8 +1,10 @@
 ## 1. Web Application Vulnerabilities
 
+🧱 - in progress
+
 ### Basic:
-- **CWE-89: SQL Injection** - SQL injection
-- **CWE-79: XSS** - cross-site scripting
+- **CWE-89: SQL Injection** - SQL injection 🧱
+- **CWE-79: XSS** - cross-site scripting 🧱
 - **CWE-352: CSRF** - forgery of cross-site requests
 - **CWE-22: Path Traversal** - traversal of file paths
 - **CWE-78: OS Command Injection** - implementation of OS commands
@@ -188,3 +190,98 @@
 3. **MITRE ATT&CK** - https://attack.mitre.org
 4. **Zero Day Initiative** - https://www.zerodayinitiative.com
 5. **Project Zero** - https://googleprojectzero.blogspot.com
+
+### **a list of hidden and non-obvious threats to an anonymous social network**  
+
+You're right — classic vulnerabilities like SQLi or XSS are just the tip of the iceberg. Attacks on infrastructure, logic, anonymity, and scalability are critical for **the largest anonymous social network**.  
+
+Here is a complete list of threats that are not mentioned in standard guides (but they will destroy you if you ignore them).  
+
+---
+
+## **0. Threats that almost no one thinks about (but they are deadly)**  
+
+### **1. Attacks on anonymity**  
+1. **Metadata Correlation Attacks** – collecting time, IP, and behavior data for deanonymization.  
+2. **Traffic Fingerprinting** – analysis of traffic patterns (Tor/ VPN will not save).  
+3. **Browser/OS Fingerprinting** – user identification via Canvas, WebGL, AudioContext.  
+4. **Timing Attacks in Mixnets** – delay analysis to determine the route.  
+5. **Sybil Attacks** – creation of thousands of fake accounts to analyze the graph of links.  
+
+### **2. Attacks on cryptography**  
+6. **Quantum Retrospective Decryption** – recording encrypted traffic for hacking in the future (when quantum computers appear).  
+7. **Backdoored RNG** – compromise of random number generators (for example, via cloud KMS).
+8. **Group Messaging Key Leak** – key leakage in E2E chats (Signal Protocol weaknesses).
+9. **Post-Compromise Security Failures** – if keys are compromised, the old correspondence is deciphered.  
+10. **Homomorphic Encryption Side Channels** – data leaks during calculations on encrypted data.  
+
+### **3. Attacks on infrastructure**  
+11. **BGP Route Leaks + DNS Poisoning** – interception of traffic at the ISP level.  
+12. **Cloud Provider Backdoors** – AWS/GCP/Azure can merge data at the request of governments.  
+13. **Container Escape to Host** – if at least one microservice is vulnerable (CVE-2022-0492), hosting crashes.  
+14. **Database Replication Attacks** – data substitution in MongoDB/PostgreSQL replicas.  
+15. **Kubernetes API Server Exploits** – RCE via kube-apiserver (CVE-2023-2728).  
+
+### **4. Attacks on the platform's economy**  
+16. **Tokenomics Exploitation** – cheating cryptocurrency ratings, pump & dump.  
+17. **Fake Content Monetization** – bots generate content and drain advertising budgets.  
+18. **Oracle Manipulation** – if there is a DeFi component, attackers will substitute currency exchange rates.  
+19. **Gas Fee Attacks** – spam transactions to block the network (as in Ethereum in 2017).  
+20. **Airdrop Farming** – creating thousands of wallets to steal tokens.  
+
+### **5. Attacks on moderation**  
+21. **Adversarial ML Poisoning** – bots teach AI moderators to skip prohibited content.  
+22. **False Report Bombs** – mass complaints about legal accounts for their blocking.  
+23. Moderator Impersonation** – social engineering against moderators (fake emails from "admins").  
+24. **Decoy Content** – uploading legal content with a hidden malicious payload.  
+25. **Lawfare Attacks** – massive DMCA/court requests for censorship.  
+
+### **6. Attacks on users**  
+26. **Fake Anonymity Lures** – "click here to verify anonymity" → deanon.  
+27. **Dark UX Patterns** – interface traps for data disclosure.  
+28. **Client-Side Exploits** – 0- day in WebRTC, WebAssembly, IndexedDB.  
+29. **Off-Platform Tracking** – if a user logs into your network and Google from the same IP address, they can be linked.  
+30. **AI-Generated Blackmail** – neural networks create fake compromises on users.  
+
+---
+
+## **7. Threats that are not in the CVE (but they are in reality)**  
+
+31. **Language-Based Fingerprinting** – analysis of writing style for identification (even through translators).  
+32. **Social Graph Reconstruction** – restoring connections through likes/reposts/activity time.  
+33. **Hidden Crawling Service** – search for vulnerable people.onion-mirrors of your service.  
+34. **Battery Drain Attacks** – a code that drains the battery for deanonymization (Android/iOS).  
+35. **Cross-Device Tracking** – linking accounts via Wi-Fi/BT metadata.  
+
+---
+
+## **8. How do I close EVERYTHING?**  
+
+### **Infrastructure**  
+✅ **Your ISP + Tier-1 IP pool** (you cannot trust AWS/Cloudflare).  
+✅ **Own data centers in jurisdictions without loyalty to the USA/EU/China**.  
+ Kubernetes with namespace isolation + eBPF monitoring**.  
+***Diskless servers (RAM-only)** – no HDD/SSD for data.  
+
+### **Anonymity**  
+✅ **Traffic mixing (Mixnets, Loopix, Dandelion++)**.  
+, **Metadata Obfuscation (Timing Padding, Fake Packets)**.  
+✅ **Ban WebRTC, Canvas, WebGL, AudioContext**.  
+***Tor/VPN is not enough, we need our own overlay networks**.  
+
+### **Cryptography**  
+✅ **Post-Quantum Cryptography (Kyber, Dilithium)**.  
+✅ **Forward Secrecy for EVERYTHING (even static content)**.  
+***HSM (Hardware Security Modules) for keys**.  
+✅ **Periodic Key Rotation**.  
+
+### **Moderation**  
+***AI + Humans-in-the-Loop (no pure AI)**.  
+, **Decentralized Moderation (as in Mastodon)**.  
+✅ **Proof-of-Humanity for creating accounts**.  
+***Zero-Knowledge moderation (verification without disclosure of data)**.  
+
+### **Economy**  
+✅ **Anti-Sybil mechanisms (Proof-of-Work for actions)**.  
+***Transaction limits (to avoid spam)**.  
+***Decentralized oracles (Chainlink is not suitable)**.
