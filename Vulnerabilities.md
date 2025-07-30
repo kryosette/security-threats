@@ -2,6 +2,7 @@
 
 🧱 - in progress
 💪 - done
+❌ - not in my project
 
 ### Basic:
 - **CWE-89: SQL Injection** - SQL injection 🧱
@@ -21,7 +22,7 @@
 - **CWE-644: HTTP Request Smuggling** - HTTP interpretation conflicts
 - **CWE-1336: Improper Neutralization** - problems in template engines
 - **CWE-1321: Prototype Pollution** - contamination of JS prototypes
-- **CWE-1236: JWT Issues** - JWT Implementation Issues
+- **CWE-1236: JWT Issues** - JWT Implementation Issues ❌
 - **CWE-1295: Debug Interface** - unsecured debugging interfaces
 
 ## 2. Network protocol vulnerabilities
