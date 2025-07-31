@@ -8,7 +8,7 @@
 - **CWE-89: SQL Injection** - SQL injection 🧱
 - **CWE-79: XSS** - cross-site scripting 🧱
 - **CWE-352: CSRF** - forgery of cross-site requests 🧱
-- **CWE-22: Path Traversal** - traversal of file paths
+- **CWE-22: Path Traversal** - traversal of file paths 🧱
 - **CWE-78: OS Command Injection** - implementation of OS commands
 
 ### Average:
