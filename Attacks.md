@@ -54,14 +54,14 @@
 ### Medium:
 - **ROBOT**: Attacks on RSA PKCS#1 v1.5
 - **Lucky 13**: Attacks on HMAC in TLS (before TLSv2) ❌
-- **Sweet32**: Collisions in 64-bit block ciphers
+- **Sweet32**: Collisions in 64-bit block ciphers ❌
 
 ### Advanced:
 - **DROWN**: Attacks on SSLv2
 - **Logjam**: Attacks on export DH parameters
 - **RC4 NOMORE**: Attacks on RC4 in TLS
 - **Minerva**: Time attacks on ECDSA
-- **Raccoon**: Time lapse attacks in TLS 1.2
+- **Raccoon**: Time lapse attacks in TLS 1.2 ❌
 
 ##4. Attacks on operating systems
 
@@ -75,7 +75,7 @@
 - **ASLR Bypass**: Address space Randomization Bypass
 - **ROP (Return-Oriented Programming)**: Attacks with return-oriented programming
 - **Kernel Race Conditions**: Race conditions in the kernel
-- **VDSO Hijacking**: Virtual DSO Substitution
+- **VDSO Hijacking**: Virtual DSO Substitution 
 
 ### Advanced:
 - **Meltdown/Spectre**: Attacks on speculative execution
