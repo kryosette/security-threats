@@ -53,7 +53,7 @@
 
 ### Medium:
 - **ROBOT**: Attacks on RSA PKCS#1 v1.5
-- **Lucky 13**: Attacks on HMAC in TLS (before TLSv2)
+- **Lucky 13**: Attacks on HMAC in TLS (before TLSv2) ❌
 - **Sweet32**: Collisions in 64-bit block ciphers
 
 ### Advanced:
