@@ -1,4 +1,4 @@
-##1. Network-level attacks
+## 1. Network-level attacks
 
 ### Basic:
 - **MITM (Man-in-the-Middle)**: Traffic interception and modification
@@ -21,7 +21,7 @@
 - **ICMP Tunnel Covert Channels**: Hidden Channels in ICMP
 - **MPLS Header Manipulation**: Attacks on MPLS Tags
 
-##2. Attacks on web applications
+## 2. Attacks on web applications
 
 ### Basic:
 - **SQL Injection**: SQL Injection
@@ -44,7 +44,7 @@
 - **WebSocket Hijacking**: Interception of WebSocket connections
 - **GraphQL Injection**: Attacks on GraphQL API
 
-##3. Attacks on cryptography
+## 3. Attacks on cryptography
 
 ### Basic:
 - **Padding Oracle**: Attacks on CBC mode
@@ -63,7 +63,7 @@
 - **Minerva**: Time attacks on ECDSA
 - **Raccoon**: Time lapse attacks in TLS 1.2 ❌
 
-##4. Attacks on operating systems
+## 4. Attacks on operating systems
 
 ### Basic:
 - **Buffer Overflow**: Buffer Overflow
@@ -84,7 +84,7 @@
 - **SMM Exploits**: Attacks on System Management Mode
 - **Apple M1 PAC Bypass**: Bypass Pointer Authentication in ARM
 
-##5. Attacks on wireless networks
+## 5. Attacks on wireless networks
 
 ### Basic:
 - **Evil Twin**: Fake Access Points
@@ -101,7 +101,7 @@
 - **Bluetooth KNOB**: Attacks on Bluetooth key Negotiation
 - **NFC Relay Attacks**: NFC Relay Attacks
 
-##6. Attacks on IoT/Embedded systems
+## 6. Attacks on IoT/Embedded systems
 
 ### Basic:
 - **Default Credentials**: Using default credentials
@@ -116,7 +116,7 @@
 - **EM Side-Channel**: Electromagnetic Attacks
 - **Laser Fault Injection**: Laser attacks on chips
 
-##7. Social Engineering
+## 7. Social Engineering
 
 ### Basic:
 - **Phishing**: Phishing emails/websites
@@ -131,7 +131,7 @@
 - **Deepfake Audio/Video**: Fake media for authentication
 - **AI-Powered Social Engineering**: AI-enhanced attacks
 
-##8. Attacks on cloud environments
+## 8. Attacks on cloud environments
 
 ### Basic:
 -**Credential Stuffing**: Using leaked credentials
@@ -145,7 +145,7 @@
 - **Serverless Function Abuse**: Abuse of serverless functions
 - **Cross-Cloud Lateral Movement**: Moving between clouds
 
-##9. Attacks on blockchain and Cryptocurrencies
+## 9. Attacks on blockchain and Cryptocurrencies
 
 ### Basic:
 - **51% Attack**: An attack on consensus
